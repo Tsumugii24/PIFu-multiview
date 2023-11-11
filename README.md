@@ -1,14 +1,35 @@
-# PIFu-multiview
-Multiview Reconstruction of PIFu
+## PIFu-multiview
+Multiview Implementation of PIFu
 
-## run detect.py
-You can easily convey the inference process of multiview PIFu reconstruction by running 'dectect.py' in a terminal, without having to use the original shell command 'tesh.sh'. This may great facilitates users of the Windows operating system.
+### detect
+Instead of having to use the original Shell Command for inference  ``sh ./scripts/test.sh``.
 
-## run gradio_demo.py 
-You can run this python file to provide a simple and intuitive web demonstration for multiview PIFu reconstruction results using the API provided by Gradio. With this, you can directly view the reconstructed model of multiview PIFu on a web page without the need to separately download MeshLab and open the model in the software. This makes the entire process more convenient and efficient. However, please remember to install the necessary dependencies for Gradio by running 'pip install gradio'.
+You can easily convey the same process by running  ``python dectect.py``  in a Terminal. This change may facilitates researchers of the windows operating system.
 
-## PIFu reconstruction from an arbitrary number of viewpoints
-This project theoretically supports reconstruction from an arbitrary number of viewpoints. One can achieve this by modifying the relevant parameters and adjusting the number of input images.
+### gradio_demo
+You can run this script to provide a simple and intuitive web demonstration for Multiview-PIFu results using the API provided by Gradio. Then, you can directly view the 3D model on a web page without the need to additionally download MeshLab which is suggested by the official. This makes the entire process more convenient and efficient. 
 
+However, please remember to install the necessary dependencies for Gradio by using the following command line
 
-The origin paper: "[PIFu: Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization](https://shunsukesaito.github.io/PIFu/)"
+```
+pip install gradio
+```
+
+Now, try to run 
+
+```
+python gradio_demo
+```
+
+and then click the link to go to the web page
+
+### PIFu reconstruction from an arbitrary number of viewpoints
+
+The project theoretically supports reconstruction from an arbitrary number of viewpoints. One can achieve this by modifying the relevant parameters and adjusting the number of corresponding input images.
+
+### References
+
+The origin paper: [PIFu: Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization](https://shunsukesaito.github.io/PIFu/)
+
+The origin repository: [shunsukesaito/PIFu: This repository contains the code for the paper "PIFu: Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization" (github.com)](https://github.com/shunsukesaito/PIFu)
+
